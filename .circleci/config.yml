@@ -17,10 +17,12 @@ jobs:
             - v1-dependencies-
 
       - run: npm install
+      - run: mkdir ~/test-results
       - run:
           name: Run tests
-          command: npm run test
-
+          command: npm run test --reporter mocha-junit-reporter
+      - store_test_results:
+          path: ~/test-results
       - save_cache:
           paths:
             - node_modules
