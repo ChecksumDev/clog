@@ -1,4 +1,5 @@
 # clog
+[![CircleCI](https://circleci.com/gh/ChecksumDev/clog.svg?style=svg)
 
 Checksum's typescript logging library
 

@@ -20,7 +20,7 @@ jobs:
       - run: mkdir ~/test-results
       - run:
           name: Run tests
-          command: npx mocha './src/tests/main.test.ts' --recursive --require ts-node/register --reporter mocha-junit-reporter
+          command: npx nyc mocha './src/tests/main.test.ts' --recursive --require ts-node/register --reporter mocha-junit-reporter
       - run: mv test-results.xml ~/test-results
       - store_test_results:
           path: ~/test-results
