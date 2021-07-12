@@ -1,4 +1,7 @@
-version: 2
+version: 2.1
+
+orbs:
+  coveralls: coveralls/coveralls
 
 defaults: &defaults
   working_directory: ~/repo
@@ -26,6 +29,7 @@ jobs:
           path: ~/test-results
       - store_artifacts:
           path: coverage
+      - coveralls/upload
       - save_cache:
           paths:
             - node_modules
