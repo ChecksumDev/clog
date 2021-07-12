@@ -1,5 +1,6 @@
-import clog from "../lib/main"
+import Clog from "../lib/main"
 import { describe, it } from "mocha";
+let clog = new Clog();
 
 describe('Log Functions', function () {
     describe('Log', function () {

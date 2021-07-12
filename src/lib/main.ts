@@ -1,6 +1,10 @@
 import { getDate } from "./utils/getDate";
 
 export default class Clog {
+
+    /** Clog Instance */
+    constructor() { return }
+
     /**
      * This function logs data to the console
      * @param data String to output to the console
