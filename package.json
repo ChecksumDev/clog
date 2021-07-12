@@ -1,0 +1,34 @@
+{
+  "name": "@checksumdev/clog",
+  "main": "dist/lib/main.js",
+  "bugs": {
+    "url": "https://github.com/ChecksumDev/clog/issues"
+  },
+  "type": "commonjs",
+  "types": "dist/lib/main.d.ts",
+  "author": "checksumdev",
+  "version": "0.0.0",
+  "scripts": {
+    "test": "mocha './src/tests/main.test.ts' --recursive --require ts-node/register",
+    "release": "tsc && np"
+  },
+  "license": "GPL-3.0-only",
+  "keywords": [],
+  "homepage": "https://github.com/ChecksumDev/clog#readme",
+  "repository": {
+    "url": "git+https://github.com/ChecksumDev/clog.git",
+    "type": "git"
+  },
+  "description": "Checksum's typescript logging library",
+  "directories": {
+    "lib": "src/lib"
+  },
+  "declaration": true,
+  "devDependencies": {
+    "@types/mocha": "^8.2.3",
+    "@types/node": "^16.3.1",
+    "mocha": "^9.0.2",
+    "ts-node": "^10.1.0",
+    "typescript": "^4.3.5"
+  }
+}
