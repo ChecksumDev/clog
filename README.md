@@ -7,7 +7,8 @@ Checksum's typescript logging library
 See other usages in the typescript type defintions
 
 ```typescript
-import clog from "@checksumdev/clog"; // Import clog
+import Clog from "@checksumdev/clog"; // Import Clog
+let clog = new Clog(); // Instantiate Clog (its faster this way)
 
 clog.log("Hello World!"); // outputs "Hello World!" in green text
 ```
