@@ -24,6 +24,8 @@ jobs:
       - run: mv test-results.xml ~/test-results
       - store_test_results:
           path: ~/test-results
+      - store_artifacts:
+          path: coverage
       - save_cache:
           paths:
             - node_modules
