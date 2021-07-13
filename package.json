@@ -6,7 +6,10 @@
   },
   "type": "commonjs",
   "types": "dist/lib/main.d.ts",
-  "author": "checksumdev",
+  "author": {
+    "name": "checksumdev",
+    "email": "collierdevs@tuta.io"
+  },
   "version": "1.0.1",
   "scripts": {
     "test": "npx mocha './src/tests/main.test.ts' --recursive --require ts-node/register",
@@ -34,6 +37,9 @@
   "declaration": true,
   "dependencies": {
     "dayjs": "^1.10.6"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/checksumdev"
   },
   "devDependencies": {
     "mocha": "^9.0.2",
