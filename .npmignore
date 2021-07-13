@@ -33,6 +33,7 @@ bower_components
 build/Release
 
 # Dependency directories
+.eslintrc.yml
 tsconfig.json
 .circleci/config.yml
 src/
