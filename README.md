@@ -7,7 +7,7 @@
   <a href="https://coveralls.io/github/ChecksumDev/clog"><img alt="pypi" src="https://coveralls.io/repos/github/ChecksumDev/clog/badge.svg"/></a>
 </div>
 
-#     
+#
 
 Checksum's typescript logging library. 🎉
 
@@ -19,7 +19,7 @@ See other usages in the typescript type defintions
 
 ```typescript
 import Clog from "@checksumdev/clog"; // Import Clog
-let clog = new Clog(); // Instantiate Clog (its faster this way)
+const clog = new Clog(); // Instantiate Clog (its faster this way)
 
 clog.log("Hello World!"); // outputs "Hello World!" in green text
 ```
