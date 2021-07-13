@@ -1,19 +1,4 @@
 {
-  "nyc": {
-    "all": true,
-    "exclude": [
-      "**/*.d.ts",
-      "dist/",
-      "coverage"
-    ],
-    "reporter": [
-      "html"
-    ],
-    "extension": [
-      ".ts",
-      ".tsx"
-    ]
-  },
   "name": "@checksumdev/clog",
   "main": "dist/lib/main.js",
   "bugs": {
@@ -24,11 +9,19 @@
   "author": "checksumdev",
   "version": "1.0.1",
   "scripts": {
-    "test": "npx nyc mocha './src/tests/main.test.ts' --recursive --require ts-node/register",
+    "test": "npx mocha './src/tests/main.test.ts' --recursive --require ts-node/register",
     "release": "tsc && np"
   },
   "license": "GPL-3.0-only",
-  "keywords": [],
+  "keywords": [
+    "typescript",
+    "logging",
+    "simple",
+    "clog",
+    "library",
+    "logging library",
+    "log"
+  ],
   "homepage": "https://github.com/ChecksumDev/clog#readme",
   "repository": {
     "url": "git+https://github.com/ChecksumDev/clog.git",
@@ -39,18 +32,18 @@
     "lib": "src/lib"
   },
   "declaration": true,
-  "devDependencies": {
-    "@types/mocha": "^8.2.3",
-    "@types/node": "^16.3.1",
-    "coveralls": "^3.1.1",
-    "mocha": "^9.0.2",
-    "mocha-junit-reporter": "^2.0.0",
-    "mocha-lcov-reporter": "^1.3.0",
-    "nyc": "^15.1.0",
-    "ts-node": "^10.1.0",
-    "typescript": "^4.3.5"
-  },
   "dependencies": {
     "dayjs": "^1.10.6"
+  },
+  "devDependencies": {
+    "mocha": "^9.0.2",
+    "eslint": "^7.30.0",
+    "ts-node": "^10.1.0",
+    "typescript": "^4.3.5",
+    "@types/node": "^16.3.1",
+    "@types/mocha": "^8.2.3",
+    "mocha-junit-reporter": "^2.0.0",
+    "@typescript-eslint/parser": "^4.28.3",
+    "@typescript-eslint/eslint-plugin": "^4.28.3"
   }
 }
