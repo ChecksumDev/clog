@@ -10,7 +10,7 @@ export default class Clog {
      * @param data String to output to the console
      */
     log(data: string) {
-        process.stdout.write(`\x1b[1m\x1b[32m(${getDate()}) [INFO] ${data}\x1b[0m\n`)
+        process.stdout.write(`\x1b[32m[${getDate()}] [INFO] ${data}\x1b[0m\n`)
     }
 
     /**
@@ -25,7 +25,7 @@ export default class Clog {
      */
 
     warn(data: string) {
-        process.stdout.write(`\x1b[1m\x1b[33m(${getDate()}) [WARN] ${data}\x1b[0m\n`)
+        process.stdout.write(`\x1b[33m[${getDate()}] [WARN] ${data}\x1b[0m\n`)
     }
 
     /**
@@ -34,15 +34,14 @@ export default class Clog {
      */
 
     error(data: string) {
-        process.stdout.write(`\x1b[1m\x1b[31m(${getDate()}) [ERROR] ${data}\x1b[0m\n`)
+        process.stdout.write(`\x1b[31m[${getDate()}] [ERROR] ${data}\x1b[0m\n`)
     }
 
     /**
      * This function logs debug data to the console
      * @param data String to output to the console
      */
-
     debug(data: string) {
-        process.stdout.write(`\x1b[1m\x1b[35m(${getDate()}) [DEBUG] ${data}\x1b[0m\n`)
+        process.stdout.write(`\x1b[35m[${getDate()}] [DEBUG] ${data}\x1b[0m\n`)
     }
 }
