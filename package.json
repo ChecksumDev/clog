@@ -22,7 +22,7 @@
   "type": "commonjs",
   "types": "dist/lib/main.d.ts",
   "author": "checksumdev",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "scripts": {
     "test": "npx nyc mocha './src/tests/main.test.ts' --recursive --require ts-node/register",
     "release": "tsc && np"
