@@ -1,6 +1,6 @@
 # clog
 
-[![CircleCI](https://circleci.com/gh/ChecksumDev/clog.svg?style=svg) [![Coverage Status](https://coveralls.io/repos/github/ChecksumDev/clog/badge.svg)](https://coveralls.io/github/ChecksumDev/clog)
+![CircleCI](https://circleci.com/gh/ChecksumDev/clog.svg?style=shield) [![Coverage Status](https://coveralls.io/repos/github/ChecksumDev/clog/badge.svg)](https://coveralls.io/github/ChecksumDev/clog)
 
 Checksum's typescript logging library
 
