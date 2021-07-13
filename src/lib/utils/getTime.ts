@@ -1,5 +1,5 @@
 import dayjs from 'dayjs';
 
-export function getDate() {
+export function getTime(): string {
     return dayjs().format("HH:MM:ss");
 }
