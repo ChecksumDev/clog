@@ -10,7 +10,7 @@
     "name": "checksumdev",
     "email": "collierdevs@tuta.io"
   },
-  "version": "1.1.0",
+  "version": "1.1.1",
   "scripts": {
     "test": "npx mocha './src/tests/main.test.ts' --recursive --require ts-node/register",
     "release": "tsc && np"
