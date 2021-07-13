@@ -27,9 +27,6 @@ jobs:
       - run: mv test-results.xml ~/test-results
       - store_test_results:
           path: ~/test-results
-      - store_artifacts:
-          path: coverage
-      - coveralls/upload
       - save_cache:
           paths:
             - node_modules
@@ -38,6 +35,27 @@ jobs:
       - persist_to_workspace:
           root: ~/repo
           paths: .
+  coverage:
+    <<: *defaults
+    steps:
+      - checkout
+      - restore_cache:
+          keys:
+            - v1-dependencies-{{ checksum "package.json" }}
+            # fallback to using the latest cache if no exact match is found
+            - v1-dependencies-
+
+      - run: npm install
+      - run:
+          name: Generate coverage report
+          command: npx nyc cover ./node_modules/mocha/bin/_mocha --report lcovonly -- -R spec && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js --verbose
+      - store_artifacts:
+          path: coverage
+      - coveralls/upload
+      - save_cache:
+          paths:
+            - node_modules
+          key: v1-dependencies-{{ checksum "package.json" }}
   deploy:
     <<: *defaults
     steps:
@@ -54,10 +72,7 @@ workflows:
   version: 2
   test-deploy:
     jobs:
-      - test:
-          filters:
-            tags:
-              only: /^v.*/
+      - test
       - deploy:
           requires:
             - test
