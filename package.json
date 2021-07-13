@@ -38,9 +38,6 @@
   "dependencies": {
     "dayjs": "^1.10.6"
   },
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com/checksumdev"
-  },
   "devDependencies": {
     "mocha": "^9.0.2",
     "eslint": "^7.30.0",
