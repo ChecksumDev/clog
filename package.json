@@ -1,18 +1,22 @@
 {
-  "name": "@checksumdev/clog",
-  "main": "dist/lib/main.js",
   "bugs": {
     "url": "https://github.com/ChecksumDev/clog/issues"
   },
+  "main": "dist/lib/main.js",
+  "name": "@checksumdev/clog",
   "type": "commonjs",
+  "files": [
+    "dist/"
+  ],
   "types": "dist/lib/main.d.ts",
   "author": "checksumdev <collierdevs@tuta.io>",
-  "version": "2.0.1",
-  "scripts": {
-    "release": "tsc && np",
-    "test": "echo none"
-  },
   "license": "GPL-3.0-only",
+  "scripts": {
+    "test": "echo none",
+    "release": "tsc && np"
+  },
+  "version": "2.0.1",
+  "homepage": "https://github.com/ChecksumDev/clog#readme",
   "keywords": [
     "typescript",
     "logging",
@@ -22,21 +26,17 @@
     "logging library",
     "log"
   ],
-  "homepage": "https://github.com/ChecksumDev/clog#readme",
   "repository": {
     "url": "git+https://github.com/ChecksumDev/clog.git",
     "type": "git"
   },
+  "declaration": true,
   "description": "Checksum's typescript logging library",
   "directories": {
     "lib": "src/lib"
   },
-  "files": [
-    "dist/"
-  ],
-  "declaration": true,
   "devDependencies": {
-    "@types/node": "^16.4.13",
-    "typescript": "^4.3.5"
+    "typescript": "^4.3.5",
+    "@types/node": "^16.4.13"
   }
 }
