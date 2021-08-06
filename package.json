@@ -26,7 +26,7 @@
     "log"
   ],
   "license": "GPL-3.0-only",
-  "main": "dist/lib/main.js",
+  "main": "dist/main.js",
   "name": "@checksumdev/clog",
   "repository": {
     "type": "git",
@@ -37,6 +37,6 @@
     "test": "echo none"
   },
   "type": "commonjs",
-  "types": "dist/lib/main.d.ts",
+  "types": "dist/main.d.ts",
   "version": "2.0.2"
 }
