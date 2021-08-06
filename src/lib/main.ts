@@ -20,7 +20,7 @@ export default class Clog {
      * @returns { void }
      */
     info(data: string): boolean {
-        return process.stdout.write(`\x1b[34m[${getTime()}] [INFO] ${data}\x1b[0m\n`);
+        return process.stdout.write(`\x1b[34m(${getTime()}) [INFO] ${data}\x1b[0m\n`);
     }
 
     /**
@@ -29,7 +29,7 @@ export default class Clog {
      * @returns { void }
      */
     warn(data: string): boolean {
-        return process.stdout.write(`\x1b[33m[${getTime()}] [WARN] ${data}\x1b[0m\n`);
+        return process.stdout.write(`\x1b[33m(${getTime()}) [WARN] ${data}\x1b[0m\n`);
     }
 
     /**
@@ -38,7 +38,7 @@ export default class Clog {
      * @returns { void }
      */
     error(data: string): boolean {
-        return process.stdout.write(`\x1b[31m[${getTime()}] [ERROR] ${data}\x1b[0m\n`);
+        return process.stdout.write(`\x1b[31m(${getTime()}) [ERROR] ${data}\x1b[0m\n`);
     }
 
     /**
@@ -47,7 +47,7 @@ export default class Clog {
      * @returns { void }
      */
     trace(data: string): boolean {
-        return process.stdout.write(`\x1b[36m[${getTime()}] [TRACE] ${data}\x1b[0m\n`);
+        return process.stdout.write(`\x1b[36m(${getTime()}) [TRACE] ${data}\x1b[0m\n`);
     }
 
     /**
@@ -56,7 +56,7 @@ export default class Clog {
      * @returns { void }
      */
     fatal(data: string): boolean {
-        return process.stdout.write(`\x1b[31m[${getTime()}] [FATAL] ${data}\x1b[0m\n`);
+        return process.stdout.write(`\x1b[31m(${getTime()}) [FATAL] ${data}\x1b[0m\n`);
     }
 
     /**
@@ -65,6 +65,6 @@ export default class Clog {
      * @returns { void }
      */
     debug(data: string): boolean {
-        return process.stdout.write(`\x1b[35m[${getTime()}] [DEBUG] ${data}\x1b[0m\n`);
+        return process.stdout.write(`\x1b[35m(${getTime()}) [DEBUG] ${data}\x1b[0m\n`);
     }
 }
