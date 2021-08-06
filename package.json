@@ -31,6 +31,9 @@
   "directories": {
     "lib": "src/lib"
   },
+  "files": [
+    "dist/"
+  ],
   "declaration": true,
   "devDependencies": {
     "@types/node": "^16.4.13",
