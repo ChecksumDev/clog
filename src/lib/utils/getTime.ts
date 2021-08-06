@@ -1,5 +1,3 @@
-import dayjs from 'dayjs';
-
-export function getTime(): string {
-    return dayjs().format("HH:MM:ss");
+export default function getTime(): string {
+    return new Date().toLocaleTimeString();
 }

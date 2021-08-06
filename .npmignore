@@ -83,3 +83,6 @@ typings/
 
 # git
 .gitattributes
+
+# workflows
+.github*
